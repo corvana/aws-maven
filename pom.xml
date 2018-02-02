@@ -6,7 +6,7 @@
 	<groupId>org.springframework.build</groupId>
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
-	<version>5.1.0.BUILD-SNAPSHOT</version>
+	<version>5.0.0-corvana</version>
 	<name>Amazon Web Services S3 Maven Wagon Support</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
@@ -20,6 +20,18 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+  <distributionManagement>
+    <repository>
+      <id>corvana</id>
+      <url>${corvana-repo-url-releases}</url>
+    </repository>
+    <snapshotRepository>
+      <id>corvana</id>
+      <url>${corvana-repo-url-snapshots}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 
 	<dependencies>
 		<dependency>
